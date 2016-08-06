@@ -1,12 +1,19 @@
-/*.portfolio-hover {
-	width: 250px;
-}
-
-.portfolio-item {
-	width: 250px;
-    height: 250px;
-}*/
 .img-responsive {
     display: block;
     margin: auto;
 }
+
+.im-centered { 
+	margin: auto;
+	max-width: 300px;
+}
+
+/*.center {
+     float: none;
+        margin: 0 auto;
+}
+
+ .col-centered{
+        float: none;
+        margin: 0 auto;
+ }*/
