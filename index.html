@@ -28,9 +28,28 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <script> 
+
         $(function() {
-            $("#contentServices").load("services.html"); 
+            
+            $("#content-portfolio").load("html/portfolio.html");
+            $("#content-services").load("html/services.html");
+            $("#content-about").load("html/about.html");
+            $("#content-team").load("html/team.html");
+
+            // MODAIS
+            $("#content-modal-ar-condicionado").load("html/modal/ar-condicionado.html");
+            $("#content-modal-artemisia-choice").load("html/modal/artemisia-choice.html");
+            $("#content-modal-calc-physics").load("html/modal/calc-physics.html");
+            $("#content-modal-calc-direct").load("html/modal/calc-direct.html");
+            $("#content-modal-club-lg").load("html/modal/club-lg.html");
+            $("#content-modal-easy-tracking").load("html/modal/easy-tracking.html");
+            $("#content-modal-mega-sena").load("html/modal/mega-sena.html");
+            $("#content-modal-mowa-messenger").load("html/modal/mowa-messenger.html");
+            $("#content-modal-sdm-lg").load("html/modal/sdm-lg.html");
+            $("#content-modal-tem-agua").load("html/modal/tem-agua.html");
+            $("#content-modal-vivo-my-app").load("html/modal/vivo-my-app.html");
         });
+        
     </script>
 
 </head>
@@ -80,413 +99,22 @@
 
     <!-- ########################## SERVICES ########################## -->
     <section id="services">
-        <div id="contentServices"/>
+        <div id="content-services"/>
     </section>
 
     <!-- ########################## PORTOLIO ########################## -->
     <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row" id="portiflio-row">
-
-                <!-- ########################## EASY TRACKING ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalEasyTracking" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_easytracking.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Easytracking</h4>
-                        <p class="text-muted">-</p>
-                    </div>
-                </div>
-
-                <!-- ########################## CALCULADORA DE FISICA ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalCalcPhysics2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_calc_fisica_v2.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Physics Calc</h4>
-                        <p class="text-muted">-</p>
-                    </div>
-                </div>
-
-                <!-- ########################## XMPP ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalXMPP" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_xmpp.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>XMPP Sample Project</h4>
-                        <p class="text-muted">-</p>
-                    </div>
-                </div>
-
-                <!-- ########################## MEGA SENA FACIL ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalMegaSena" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_mega_sena_facil.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Easy Lottery</h4>
-                        <p class="text-muted">-</p>
-                    </div>
-                </div>
-
-                <!-- ########################## TEM AGUA ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalHasWater" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_tem_agua.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Level of SP Dikes</h4>
-                        <p class="text-muted">-</p>
-                    </div>
-                </div>
-
-                <!-- ########################## MOWA MESSENGER - MOWA ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalMessenger" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_mowa_messenger.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Messenger</h4>
-                        <p class="text-muted">Mowa</p>
-                    </div>
-                </div>
-
-                <!-- ########################## VIVO MEU APP - MOWA ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModaVivoMyApp" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_vivo_meu_app.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Vivo My App</h4>
-                        <p class="text-muted">Mowa</p>
-                    </div>
-                </div>
-
-                <!-- ########################## CHOICE - MOWA ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalChoice" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_choice.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Artemisia Choice</h4>
-                        <p class="text-muted">Mowa</p>
-                    </div>
-                </div>
-
-                <!-- ########################## CALC ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalCalcMethod" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_calc.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Calc Direct and Iterative Method</h4>
-                        <p class="text-muted">-</p>
-                    </div>
-                </div>
-
-                <!-- ########################## CLUBE LG - LG ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalClubLG" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_club_lg.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Club LG</h4>
-                        <p class="text-muted">LG</p>
-                    </div>
-                </div>
-
-                <!-- ########################## AR CONDICIONADO - LG ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalArCondicionado" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_ar_condicionado.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Ar Condicionado</h4>
-                        <p class="text-muted">LG</p>
-                    </div>
-                </div>
-                
-                <!-- ########################## SDM - LG ########################## -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModalSDM" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/logo_sdm.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Store Data Management</h4>
-                        <p class="text-muted">LG</p>
-                    </div>
-                </div>    
-            </div>
-        </div>
+        <div id="content-portfolio"/>
     </section>
 
     <!-- ########################## ABOUT ########################## -->
     <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-
-                        <!-- ########################## FMU ########################## -->
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/fmu.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>January 2011</h4>
-                                    <h4 class="subheading">Started Bachelor in Computer Science</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">My choice was to study IT because since I was a child I always liked this kind of things.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- ########################## STEFANINI ########################## -->
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/stefanini.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>May 2011</h4>
-                                    <h4 class="subheading">Internship Java Web Developer</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">After I have done a Java course at Stefanini, I started to work with Java, it was my biggest challenge. </p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- ########################## LG ########################## -->
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/lg.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>April 2013</h4>
-                                    <h4 class="subheading">Internship Android Developer</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">LG was the first company who gave me the opportunity to work as Android Developer and I could improve my knowledge as professional and person.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- ########################## LG ########################## -->
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/lg.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>November 2013</h4>
-                                    <h4 class="subheading">Junior Android System Analyst</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">After 6 months working as an internship, I got a promotion so I had more responsibilities been the solo Android in that company.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- ########################## MOWA ########################## -->
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/mowa.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>August 2014</h4>
-                                    <h4 class="subheading">Android Developer</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">My next challenge was at Mowa, I could improve my leadership and Android skills and I had good challenges in differents projects.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- ########################## FMU ########################## -->
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/fmu.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2014</h4>
-                                    <h4 class="subheading">Finished Bachelor in Computer Science</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">After 4 years studying every day and learned a lot of things, I have finished my university and I started to plan my next big challenge.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- ########################## DUBLIN ########################## -->
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/irleand.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>September 2015</h4>
-                                    <h4 class="subheading">Dublin</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">After I had worked in 3 differents companies and I had finished my university I decided to move to another country to learn a new language and get a new job.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- ########################## DAON ########################## -->
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/daon.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>January 2016</h4>
-                                    <h4 class="subheading">Associate Technical Consultant</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Later 4 months just studying English and working as a volunteer, I got a job, my biggest challenge and the most difficult until now.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Waiting
-                                    <br>for the next
-                                    <br>challenge!
-                                </h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <div id="content-about"/>
     </section>
 
     <!-- ########################## TEAM SECTION ########################## -->
     <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Me</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="im-centered">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="team-member">
-                            <img src="img/team/me.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Thales Marega</h4>
-                            <p class="text-muted"></p>
-                            <ul class="list-inline social-buttons">
-                                <li>
-                                    <a href="https://www.facebook.com/thales.bertolini">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/thalesbm92">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/thalesbertolini">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/thalesbm">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-team"/>
     </section>
 
     <footer>
@@ -501,606 +129,57 @@
 
     <!-- ########################## MEGA SENA ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalMegaSena" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Mega Sena Easy</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/mega_sena_facil/app_1.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/mega_sena_facil/app_2.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/mega_sena_facil/app_3.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/mega_sena_facil/app_4.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/mega_sena_facil/app_5.png" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong> Mega Sena Easy is an app for Brazilians users who likes to play in the lottery, the app helps the users comparing them games and showing the result.
-                                </p>
-                                                        
-                                <p>
-                                    <strong>Would you want download this app?</strong> You can download accessing this link: <a href="https://play.google.com/store/apps/details?id=br.com.megasena">Google Play</a>
-                                </p>
-                                <ul class="list-inline">
-                                    <li>Date: August 2012</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-mega-sena"/>
     </div>
 
     <!-- ########################## TEM AGUA ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalHasWater" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Level of SP Dikes</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/tem_agua/app_1.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/tem_agua/app_2.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/tem_agua/app_3.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/tem_agua/app_4.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/tem_agua/app_5.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/tem_agua/app_6.png" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong> During a water crisis in Sao Paulo/Brazil, I have done this app to inform the people about the water level. This app shows the water level in the water reservoir and the user can compare against others days.
-                                </p>
-                                                                
-                                <p>
-                                    <strong>Would you want download this app?</strong> You can download accessing this link: <a href="https://play.google.com/store/apps/details?id=br.com.puzzle.temagua">Google Play</a>
-                                </p>
-                                <ul class="list-inline">
-                                    <li>Date: March 2015</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-tem-agua"/>
     </div>
 
     <!-- ########################## CALC DIRECT ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalCalcMethod" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Calc Direct and Iterative Method</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/calc_direct/app_1.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/calc_direct/app_2.png" alt="">
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/calc_direct/app_3.png" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong> During my second year at university, I did this app to help the students to compare if they were doing the assignment right.
-                                </p>
-                                                                
-                                <p>
-                                    <strong>Would you want download this app?</strong> You can download accessing this link: <a href="https://play.google.com/store/apps/details?id=com.faculdade.sistema">Google Play</a>
-                                </p>
-                                <ul class="list-inline">
-                                    <li>Date: April 2013</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-calc-direct"/>
     </div>
 
     <!-- ########################## CLUB LG ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalClubLG" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Club LG</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/club_lg/app_1.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/club_lg/app_2.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/club_lg/app_3.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/club_lg/app_4.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/club_lg/app_5.png" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong> Club LG is an app for all salespeople who works with LG products, with the app the user is able to look how many points he has and with these points the user can change for LG products.
-                                </p>
-                                                                
-                                <p>
-                                    <strong>Would you want download this app?</strong> You can download accessing this link: <a href="https://play.google.com/store/apps/details?id=com.lgcns.lgclub">Google Play</a>
-                                </p>
-                                <ul class="list-inline">
-                                    <li>Date: August 2014</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-club-lg"/>
     </div>
 
     <!-- ########################## ARTEMISIA CHOICE ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalChoice" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Artemisia Choice</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/choice/app_1.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/choice/app_2.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/choice/app_3.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/choice/app_4.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/choice/app_5.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/choice/app_6.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/choice/app_7.png" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong> Artemisia Choice is a social networking for students, with this app is possible the students share experiences, talk with others students, see the lastes updates from the university.
-                                </p>
-                                                                
-                                <p>
-                                    <strong>Would you want download this app?</strong> You can download accessing this link: <a href="https://play.google.com/store/apps/details?id=br.com.artemisia.choice">Google Play</a>
-                                </p>
-                                <ul class="list-inline">
-                                    <li>Date: June 2015</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-artemisia-choice"/>
     </div>
 
     <!-- ########################## MOWA MESSENGER ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalMessenger" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Mowa Messenger</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/messenger/app_1.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/messenger/app_2.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/messenger/app_3.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/messenger/app_4.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/messenger/app_5.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/messenger/app_6.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/messenger/app_7.png" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong> Mowa Messenger is an internal communicator for the companies, the employees can talk with each other and in groups, unfortunately, I couldn't finish this app because I left the company to move to Dublin, but I liked so much to work with XMPP and I started to create my own app.
-                                </p>
-                                                                
-                                <ul class="list-inline">
-                                    <li>Date: August 2015</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-mowa-messenger"/>
     </div>
 
     <!-- ########################## VIVO MY APP - MOWA ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModaVivoMyApp" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Vivo My App</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/vivo_app/app_1.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/vivo_app/app_2.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/vivo_app/app_3.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/vivo_app/app_4.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/vivo_app/app_5.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/vivo_app/app_6.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/vivo_app/app_7.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/vivo_app/app_8.png" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong> Have you ever thought to create an app with another app? With this app it is possible, you will be able to choose the interface, the images, and the information.
-                                </p>
-                                                                
-                                <ul class="list-inline">
-                                    <li>Date: September 2015</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-vivo-my-app"/>
     </div>
 
     <!-- ########################## AR CONDICIONADO - LG ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalArCondicionado" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Air Conditioning</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/ar_condicionado/app_1.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/ar_condicionado/app_2.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/ar_condicionado/app_3.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/ar_condicionado/app_4.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/ar_condicionado/app_5.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/ar_condicionado/app_6.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/ar_condicionado/app_7.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/ar_condicionado/app_8.png" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong> Air Conditioning is an app to help the user finds the best air conditioning for his environment. With it, the user is able to see the exact specs.
-                                </p>
-                                        
-                                <p>
-                                    <strong>Would you want download this app?</strong> You can download accessing this link: <a href="https://play.google.com/store/apps/details?id=com.lgcns.acsimulator">Google Play</a>
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Date: August 2014</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-ar-condicionado"/>
     </div>
 
     <!-- ########################## EASY TRACKING ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalEasyTracking" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Easytracking</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/easytracking/app_1.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/easytracking/app_2.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/easytracking/app_3.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/easytracking/app_4.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/easytracking/app_5.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/easytracking/app_6.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/easytracking/app_7.jpg" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong> Easytracking is an app to provide the necessary information for the employees who deliver documents, the app register delivery, register attempts to delivery, return documents, take picture, register signature.
-                                </p>
-                                
-                                <!--        
-                                <p>
-                                    <strong>Would you want download this app?</strong> You can download accessing this link: <a href="https://play.google.com/store/apps/details?id=com.lgcns.acsimulator">Google Play</a>
-                                </p>
-                                -->
-
-                                <ul class="list-inline">
-                                    <li>Date: August 2017</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-easy-tracking"/>
     </div>
 
     <!-- ########################## SDM - LG ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalSDM" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Store Data Management</h2>
-                                
-                                <p>
-                                    <strong>Description:</strong> Store Data Management is an app for the LG to manage all the stores and their products, the salespeople answers a few forms every day and sends to LG. 
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Date: May 2013</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       <div id="content-modal-sdm-lg"/>
     </div>
 
     <!-- ########################## CALC PHYSICS ########################## -->
     <div class="portfolio-modal modal fade" id="portfolioModalCalcPhysics2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Physics Calc</h2>
-
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/calc_physics/app_1.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/calc_physics/app_2.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/calc_physics/app_3.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/calc_physics/app_4.png" alt="">
-                                    </div>
-                                    <div class="col-md-3 col-sm-5">
-                                        <img class="img-responsive img-centered" src="img/modais/calc_physics/app_5.png" alt="">
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <strong>Description:</strong>Physics Calc is the best Android app where you can solve your problems, is it possible to fill in with the value and the units and the app will convert before shows the result.
-                                </p>
-                                                                
-                                <p>
-                                    <strong>Would you want download this app?</strong> You can download accessing this link: <a href="https://play.google.com/store/apps/details?id=br.com.calculadora.fisica.v2">Google Play</a>
-                                </p>
-                                <ul class="list-inline">
-                                    <li>Date: December 2016</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="content-modal-calc-physics"/>
     </div>
 
     <script src="vendor/jquery/jquery.min.js"></script>
