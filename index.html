@@ -31,11 +31,12 @@
     <script> 
         $(function() {
             // $("#contentServices").load("html/services.html"); 
+            // $("#contentPortfolio").load("html/portfolio.html"); 
             $("#contentAbout").load("html/about.html"); 
+            $("#contentHistory").load("html/history.html"); 
             $("#contentMe").load("html/me.html"); 
             $("#contentFooter").load("html/footer.html"); 
             $("#contentCertificados").load("html/certificados.html"); 
-            // $("#contentPortfolio").load("html/portfolio.html"); 
             $("#contentPages").load("html/pages.html"); 
         });
     </script>
@@ -61,12 +62,15 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#certificados">Certificates</a>
+                        <a class="page-scroll" href="#history">History</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Mobile Apps</a>
+                        <a class="page-scroll" href="#certificados">Certificates</a>
                     </li>
                     <!-- <li>
+                        <a class="page-scroll" href="#portfolio">Mobile Apps</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#services">Pages/Libraries</a>
                     </li> -->
                     <li>
@@ -89,8 +93,13 @@
     </header>
 
     <!-- ########################## ABOUT ########################## -->
-    <section id="about">
+    <section id="about" class="bg-light-gray">
         <div id="contentAbout"/>
+    </section>
+
+    <!-- ########################## HISTORY ########################## -->
+    <section id="history">
+        <div id="contentHistory"/>
     </section>
 
     <!-- ########################## CERTIFICADOS ########################## -->
