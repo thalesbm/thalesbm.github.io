@@ -15,7 +15,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome-6.7.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Kaushan+Script&family=Droid+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -27,28 +27,31 @@
 </head>
 
 <body id="page-top" class="index">
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
-            <a class="navbar-brand page-scroll" href="#page-top">Thales Marega</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item d-none">
-                        <a class="nav-link" href="#page-top"></a>
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Thales Marega</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="page-scroll nav-link" href="#about">About</a>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="page-scroll nav-link" href="#history">Experience</a>
+                    <li>
+                        <a class="page-scroll" href="#history">Experience</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="page-scroll nav-link" href="#certificados">Certificates</a>
+                    <li>
+                        <a class="page-scroll" href="#certificados">Certificates</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="page-scroll nav-link" href="#team">Contact</a>
+                    <li>
+                        <a class="page-scroll" href="#team">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -68,27 +71,27 @@
 
     <!-- ########################## ABOUT ########################## -->
     <section id="about" class="bg-light-gray">
-        <div id="contentAbout"></div>
+        <div id="contentAbout"/>
     </section>
 
     <!-- ########################## HISTORY ########################## -->
     <section id="history">
-        <div id="contentHistory"></div>
+        <div id="contentHistory"/>
     </section>
 
     <!-- ########################## CERTIFICADOS ########################## -->
     <section id="certificados" class="bg-light-gray">
-        <div id="contentCertificados"></div>
+        <div id="contentCertificados"/>
     </section>
 
     <!-- ########################## TEAM SECTION ########################## -->
     <section id="team">
-        <div id="contentMe"></div>
+        <div id="contentMe"/>
     </section>
 
     <!-- ########################## FOOTER ########################## -->
     <footer id="footer">
-        <div id="contentFooter"></div>
+        <div id="contentFooter"/>
     </footer>
 
     <!-- ################################################################## -->
@@ -98,7 +101,7 @@
     <div id="certificateModals"></div>
 
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/agency.js"></script>
     <script src="js/default.js"></script>
 
