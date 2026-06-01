@@ -46,7 +46,7 @@
         }
 
         var entries = [];
-        nav.querySelectorAll(".navbar-nav li").forEach(function(li) {
+        nav.querySelectorAll(".navbar-nav .nav-item").forEach(function(li) {
             var link = li.querySelector('a[href^="#"]');
             if (!link) {
                 return;
@@ -64,7 +64,7 @@
         });
 
         function setActiveItem(activeLi) {
-            nav.querySelectorAll(".navbar-nav li").forEach(function(li) {
+            nav.querySelectorAll(".navbar-nav .nav-item").forEach(function(li) {
                 li.classList.toggle("active", li === activeLi);
             });
         }
@@ -92,7 +92,7 @@
     function initMobileNavCollapse() {
         document.querySelectorAll(".navbar-collapse ul li a:not(.dropdown-toggle)").forEach(function(link) {
             link.addEventListener("click", function() {
-                var toggle = document.querySelector(".navbar-toggle");
+                var toggle = document.querySelector(".navbar-toggler");
                 var collapse = document.querySelector(".navbar-collapse");
                 if (!toggle || !collapse) {
                     return;
@@ -102,7 +102,7 @@
                     return;
                 }
 
-                if (collapse.classList.contains("in")) {
+                if (collapse.classList.contains("show")) {
                     toggle.click();
                 }
             });
