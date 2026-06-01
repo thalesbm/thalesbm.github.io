@@ -15,7 +15,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome-5.13.1/css/all.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome-5.15.4/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Kaushan+Script&family=Droid+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -23,39 +23,6 @@
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
     <link href="css/default.css" rel="stylesheet">
-
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <script> 
-        $(function() {
-            $("#contentAbout").load("html/about.html"); 
-            $("#contentHistory").load("html/history.html"); 
-            $("#contentMe").load("html/me.html"); 
-            $("#contentFooter").load("html/footer.html"); 
-            $("#contentCertificados").load("html/certificados.html");
-
-            var certificateModals = [
-                "education/degree",
-                "certificates/aws-cloud-practitioner",
-                "certificates/scrum-fundamentals",
-                "soft-skills/leadership",
-                "soft-skills/scrum",
-                "data-science/ai-engineer",
-                "data-science/machine-learning",
-                "backend-cloud/backend",
-                "backend-cloud/cloud",
-                "backend-cloud/data-management",
-                "mobile/android",
-                "mobile/ios",
-                "mobile/architecture"
-            ];
-            certificateModals.forEach(function(path) {
-                $("<div></div>")
-                    .appendTo("#certificateModals")
-                    .load("html/certificates/" + path + ".html");
-            });
-        });
-    </script>
 
 </head>
 
@@ -133,6 +100,7 @@
 
     <div id="certificateModals"></div>
 
+    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery/jquery.easing.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/agency.min.js"></script>
