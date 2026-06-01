@@ -37,16 +37,24 @@
             $("#contentCertificados").load("html/certificados.html");
 
             var certificateModals = [
-                "mobile", "leadership", "agile",
-                "aws-cloud-practitioner", "scrum-fundamentals",
-                "ai-engineer", "machine-learning",
-                "ios", "android", "backend",
-                "education", "cloud", "data-management"
+                "education/degree",
+                "certificates/aws-cloud-practitioner",
+                "certificates/scrum-fundamentals",
+                "soft-skills/leadership",
+                "soft-skills/scrum",
+                "data-science/ai-engineer",
+                "data-science/machine-learning",
+                "backend-cloud/backend",
+                "backend-cloud/cloud",
+                "backend-cloud/data-management",
+                "mobile/android",
+                "mobile/ios",
+                "mobile/architecture"
             ];
-            certificateModals.forEach(function(name) {
+            certificateModals.forEach(function(path) {
                 $("<div></div>")
                     .appendTo("#certificateModals")
-                    .load("html/certificates/" + name + ".html");
+                    .load("html/certificates/" + path + ".html");
             });
         });
     </script>
